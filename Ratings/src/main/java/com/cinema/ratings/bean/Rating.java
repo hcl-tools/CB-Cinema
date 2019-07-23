@@ -1,12 +1,19 @@
 package com.cinema.ratings.bean;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "Ratings")
 public class Rating {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(name = "movieid")
     private int movieId;
     private double rating;
 
-    public Rating() {
+    protected Rating() {
     }
 
     public Rating(int id, int movieId, double rating) {
