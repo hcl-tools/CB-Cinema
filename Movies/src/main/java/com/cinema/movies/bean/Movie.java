@@ -2,7 +2,6 @@ package com.cinema.movies.bean;
 
 import javax.persistence.*;
 import java.sql.Date;
-import java.time.LocalDateTime;
 import java.util.List;
 
 

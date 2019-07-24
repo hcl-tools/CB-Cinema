@@ -1,4 +1,8 @@
 package com.cinema.movies.services;
 
-public class CommentFeign {
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient("COMMENT")
+public interface CommentFeign {
 }
